@@ -31,9 +31,9 @@ function analyze() {
 
       var response = JSON.parse(e.target.responseText);
       el("result-label").innerHTML = `Result = ${response["result"]}`;
-if (response["result"] == "Apple___Apple_scab" ) {
+if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   var res = 2;
-}else if (response["result"] == "Apple___Cedar_apple_rust") {
+}else if (("result-label").innerHTML == "Apple___Cedar_apple_rust") {
   res = 1;
 }
     }
@@ -43,4 +43,5 @@ if (response["result"] == "Apple___Apple_scab" ) {
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
+
 }
