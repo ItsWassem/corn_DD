@@ -33,7 +33,7 @@ function analyze() {
       el("result-label").innerHTML = `Result = ${response["result"]}`;
 if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   var res = 2;
-  $(location).attr('href',"https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR");
+ location.replace("https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNe")
 }else if (("result-label").innerHTML == "Apple___Cedar_apple_rust") {
   res = 1;
   
@@ -45,20 +45,12 @@ if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
-
-function redirect() {
-var thing1 = $('p:contains("Apple___Apple_scab")').text();
-var thing2 = $('p:contains("Apple___Cedar_apple_rust")').text();  
-   if(thing1) {
-       $(location).attr('href',"https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR");//JQuery redirect
-   }
-}
 }
 
 function redirect() {
 var thing1 = $('p:contains("Apple___Apple_scab")').text();
 var thing2 = $('p:contains("Apple___Cedar_apple_rust")').text();  
    if(thing1) {
-       $(location).attr('href',"https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR");//JQuery redirect
+ location.replace("https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNe")
    }
 }
