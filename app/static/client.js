@@ -45,3 +45,11 @@ if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   xhr.send(fileData);
 
 }
+
+function redirect() {
+var thing1 = $('p:contains("Apple___Apple_scab")').text();
+var thing2 = $('p:contains("Apple___Cedar_apple_rust")').text();  
+   if(thing1) {
+       $(location).attr('href',"https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR");//JQuery redirect
+   }
+}
