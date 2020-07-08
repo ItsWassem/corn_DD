@@ -33,8 +33,10 @@ function analyze() {
       el("result-label").innerHTML = `Result = ${response["result"]}`;
 if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   var res = 2;
+  $(location).attr('href',"https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR");
 }else if (("result-label").innerHTML == "Apple___Cedar_apple_rust") {
   res = 1;
+  
 }
     }
     el("analyze-button").innerHTML = "Diagnose";
@@ -44,6 +46,13 @@ if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
 
+function redirect() {
+var thing1 = $('p:contains("Apple___Apple_scab")').text();
+var thing2 = $('p:contains("Apple___Cedar_apple_rust")').text();  
+   if(thing1) {
+       $(location).attr('href',"https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR");//JQuery redirect
+   }
+}
 }
 
 function redirect() {
