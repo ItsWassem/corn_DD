@@ -33,7 +33,7 @@ function analyze() {
       el("result-label").innerHTML = `Result = ${response["result"]}`;
 if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   var res = 2;
- location.replace("https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNe")
+ location.replace("https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNe");
 }else if (("result-label").innerHTML == "Apple___Cedar_apple_rust") {
   res = 1;
   
