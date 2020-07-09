@@ -43,14 +43,14 @@
 
 
    <header class="header_area">
-		
-	
+
+
 
 
 
          <div class="main_menu">
 			 <nav class="navbar navbar-expand-lg" style="background-color:black">
-				<div class="container"> 
+				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					 <a class="navbar-brand logo_h" href="index.aspx">
 						<img src="../static/logo3.png" alt="" style="height:70px">
@@ -69,14 +69,14 @@
 									<li class="nav-item active">
 										<a class="nav-link" href="http://localhost:22541/userAccount.aspx">Home</a>
 									</li>
-									
-									
+
+
 									<li class="nav-item">
 										<a class="nav-link" href="http://localhost:22541/userAccount.aspx#usrabts">About US</a>
 									</li>
 
 
-									
+
 									<li class="nav-item submenu dropdown">
 										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LEAFIX</a>
 										<ul class="dropdown-menu">
@@ -91,13 +91,13 @@
 											</li>
 										</ul>
 									</li>
-									
+
 									<li class="nav-item">
 										<a class="nav-link" href="http://localhost:22541/userAccount.aspx#usrconus">Contact US</a>
 									</li>
 
 
-                                    
+
                                     <li class="nav-item submenu dropdown">
 										<a class="nav-link" href="#">Profile</a>
 										<ul class="dropdown-menu">
@@ -109,7 +109,7 @@
                                                 </li>
                                                 </ul>
 											</li>
-                                           
+
 
 
                                      <li class="nav-item ">
@@ -117,10 +117,10 @@
 
 									</li>
 
-                                  
 
 
-                                    
+
+
 
 
 
@@ -145,6 +145,8 @@
     <p>
       Use images of <strong>Scab</strong> Apple, <strong>Cedar Rust</strong> Apple, <strong>Healthy</strong> Apple
     </p>
+
+
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
@@ -171,7 +173,7 @@
         <label id='result-label'></label>
       </div>
 
- 
+
     </div>
   </div>
 </div>
@@ -243,28 +245,29 @@
                         </div>
                     </div>
                     <!-- Footer Nav -->
-                    <div class="col-12 col-md-6">
-                        <div class="footer-nav">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Service</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
     </footer>
 
+
 </body>
 
+<script type="text/javascript">
 
+
+function redirect() {
+
+var ris = document.getElementById('result-label').innerHTML;
+
+
+   if(ris == "Result = Apple___Apple_scab") {
+ location.replace("https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR")
+window.print();
+   }
+}
+</script>
 
 	<!--================ Optional JavaScript =================-->
 	<!--================ jQuery first, then Popper.js, then Bootstrap JS =================-->
