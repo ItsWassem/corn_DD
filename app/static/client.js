@@ -30,7 +30,7 @@ function analyze() {
     if (this.readyState === 4) {
 
       var response = JSON.parse(e.target.responseText);
-      el("result-label").innerHTML = `Result = ${response["result"]}`;
+      el("result-label").innerHTML = `Disease Diagnosed : ${response["result"]}`;
 if (("result-label").innerHTML == "Apple___Apple_scab" ) {
   var res = 2;
 }else if (("result-label").innerHTML == "Apple___Cedar_apple_rust") {
