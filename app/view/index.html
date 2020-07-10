@@ -66,7 +66,7 @@
 						<div class="row ml-0 w-100">
 							<div class="col-lg-12 pr-0">
 								<ul class="nav navbar-nav center_nav pull-right">
-									<li class="nav-item active">
+									<li class="nav-item">
 										<a class="nav-link" href="http://localhost:22541/userAccount.aspx">Home</a>
 									</li>
 
@@ -77,17 +77,23 @@
 
 
 
-									<li class="nav-item submenu dropdown">
+                  <li class="nav-item submenu dropdown active">
 										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LEAFIX</a>
 										<ul class="dropdown-menu">
 											<li class="nav-item">
-												<a class="nav-link" href="https://leafix.onrender.com/">Leafix APPLE</a>
+												<a class="nav-link" href="sign_in.aspx">Leafix APPLE</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#">Leafix Tomato</a>
+												<a class="nav-link" href="#">Leafix TOMATO</a>
 											</li>
                                             <li class="nav-item">
-												<a class="nav-link" href="#">Leafix MAZIE/CORN</a>
+												<a class="nav-link" href="#">Leafix MAIZE</a>
+											</li>
+                                            <li class="nav-item">
+												<a class="nav-link" href="Cure.aspx">Leafix CURE</a>
+											</li>
+                                            <li class="nav-item">
+												<a class="nav-link" href="/Cure.aspx#newus">Leafix Updates</a>
 											</li>
 										</ul>
 									</li>
@@ -143,7 +149,7 @@
   <div class='center'>
     <div class='title'>Apple Disease Detection</div>
     <p>
-      Use images of <strong>Scab</strong> Apple, <strong>Cedar Rust</strong> Apple, <strong>Healthy</strong> Apple
+      Use images of Apple <strong style="color:black;font-size:17px">Scab</strong>, <strong style="color:black;font-size:17px">Cedar </strong> Apple <strong style="color:black;font-size:17px"> Rust</strong> , Apple <strong style="color:black;font-size:17px">Healthy</strong>
     </p>
 
 
@@ -167,10 +173,13 @@
         <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()' style="margin-right:15px">Diagnose</button>
 
 
-        <button id='report-button' class='analyze-button' type='button' onclick='redirect()' style="margin-left:15px">Report</button>
+        <button id='report-button' class='analyze-button' type='button' onclick='redirect()' style="margin-left:15px">Get Report</button>
+      </div>
+      <div style="height:30px">
+
       </div>
       <div class='result-label'>
-        <label id='result-label'></label>
+        <label style="font-size:20px;font-style:bold;color:black" id='result-label'></label>
       </div>
 
 
@@ -245,7 +254,7 @@
                         </div>
                     </div>
                     <!-- Footer Nav -->
-                    
+
                 </div>
             </div>
         </div>
@@ -262,10 +271,16 @@ function redirect() {
 var ris = document.getElementById('result-label').innerHTML;
 
 
-   if(ris == "Result = Apple___Apple_scab") {
- location.replace("https://drive.google.com/uc?export=download&id=129wKTMHWouy2YJNkr0C42guNezOpgxMR")
+   if(ris == "Disease Diagnosed : Apple___Apple_scab") {
+ location.replace("https://drive.google.com/uc?export=download&id=1qm9nsbc2tFxdSfrrqVdblxqDasMmStL-")
 window.print();
    }
+
+else if(ris == "Disease Diagnosed : Apple___Cedar_apple_rust") {
+ location.replace("https://drive.google.com/uc?export=download&id=1C6HtpquZS6Giop1S1bmE24zhzWLZ0Hsj")
+window.print();
+   }
+
 }
 </script>
 
@@ -293,34 +308,7 @@ window.print();
     <script src='js1/plugins/plugins.js'></script>
     <!-- Active js -->
     <script src='js1/active.js'></script>
-<script type="text/javascript">
 
-$(document).ready(function () {
-
-    $('.cedar').hide();
-
-    $('.scab').hide();
-
-});
-if (res == 1) {
-
-
-$("#report-button").click(function(){
-    $(".cedar").show();
-  });
-}
-if (res == 2) {
-
-
-  $("#report-button").click(function(){
-      $(".scab").show();
-    });
-
-}
-  var random = Math.random( );
-    document.write("Random Number Generated : " + random );
-
-</script>
 
 
 
